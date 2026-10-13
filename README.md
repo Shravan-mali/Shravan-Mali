@@ -43,9 +43,3 @@
 - **Portfolio:** [Visit Website](https://shravan-mali.github.io/Shravan-Mali/)
 - **GitHub:** [@Shravan-mali](https://github.com/Shravan-mali)
 - **Email:** [Contact Me](https://mail.google.com/mail/?view=cm&to=msswork1211%40gmail.com)
-
----
-
-<p align="center">
-  <i>Turning ideas into useful tech. 🚀</i>
-</p>
