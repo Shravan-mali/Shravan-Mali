@@ -26,10 +26,6 @@
 
 💬 Ask me about Python, HTML, CSS, and my projects.
 
-## 📊 GitHub Insights
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Shravan-mali&show_icons=true&hide_border=true&theme=tokyonight)
-
 ## 💻 Language Used
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Shravan-mali&layout=compact&hide_border=true&theme=tokyonight)
