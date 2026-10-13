@@ -1,77 +1,51 @@
+# Hi there 👋, I'm Shravan Mali
 
-<h1 align="center">Hi 👋, I'm Shravan Mali</h1>
-<h3 align="center">Student Developer | Python | Web Development | AI Projects</h3>
+**Student | Python Developer | Web Developer | AI Enthusiast**
 
-<p align="center">
-  <a href="https://shravan-mali.github.io/Shravan-Mali/">
-    <img src="https://img.shields.io/badge/Visit_My_Portfolio-000000?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio"/>
-  </a>
-  <a href="https://github.com/Shravan-mali">
-    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" alt="GitHub"/>
-  </a>
-</p>
+### 🌐 Visit My Portfolio
 
----
+[https://shravan-mali.github.io/Shravan-Mali/](https://shravan-mali.github.io/Shravan-Mali/)
 
-## 👨‍💻 About Me
-
-- 🎓 I'm a student passionate about technology and software development.
-- 💻 I enjoy building practical projects and learning new technologies.
-- 🤖 Interested in Artificial Intelligence, automation, and web development.
-- 🐍 Currently improving my Python and programming skills.
-- 🚀 My goal is to turn ideas into useful technology.
-
-## 🛠️ Skills & Technologies
+## 🔗 Skills
 
 <p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+<img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
-## 🚀 Featured Projects
+🔭 I'm currently working on software development projects.
 
-### 🌐 Personal Portfolio
-My personal website showcasing my skills, projects, and developer journey.
+🌱 I'm currently learning Python, web development, and AI technologies.
 
-🔗 [View Portfolio](https://shravan-mali.github.io/Shravan-Mali/)
+🤖 I'm interested in AI tools, automation, and practical software projects.
 
-### 🔎 Public IP Reconnaissance & ASN Mapping Tool
-A Python CLI project designed to analyze public IP information, ASN, ISP, and related network details.
+💬 Ask me about Python, HTML, CSS, and my projects.
 
-🔗 [View Repository](https://github.com/Shravan-mali)
+## 📊 GitHub Insights
 
-### 💬 Chat Application
-An Android chat application project focused on messaging, Firebase integration, and notifications.
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Shravan-mali&show_icons=true&hide_border=true&theme=tokyonight)
 
-🔗 [Explore My GitHub](https://github.com/Shravan-mali)
+## 💻 Language Used
 
-### 🤖 AutoTube AI / FeedCrafts
-Exploring AI-powered content creation and automation workflows.
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Shravan-mali&layout=compact&hide_border=true&theme=tokyonight)
 
-🔗 [Explore My Projects](https://github.com/Shravan-mali)
+## 📈 GitHub Activity
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Shravan-mali&show_icons=true&hide_border=true&theme=tokyonight" alt="GitHub Stats"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shravan-mali&layout=compact&hide_border=true&theme=tokyonight" alt="Top Languages"/>
-</p>
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Shravan-mali&theme=tokyo-night)](https://github.com/Shravan-mali)
 
 ## 📫 Connect With Me
 
-- 🌐 Portfolio: [shravan-mali.github.io/Shravan-Mali](https://shravan-mali.github.io/Shravan-Mali/)
-- 💻 GitHub: [@Shravan-mali](https://github.com/Shravan-mali)
-- 📧 Email: [Contact Me](https://mail.google.com/mail/?view=cm&to=msswork1211%40gmail.com)
+- **Portfolio:** [Visit Website](https://shravan-mali.github.io/Shravan-Mali/)
+- **GitHub:** [@Shravan-mali](https://github.com/Shravan-mali)
+- **Email:** [Contact Me](https://mail.google.com/mail/?view=cm&to=msswork1211%40gmail.com)
 
 ---
 
 <p align="center">
-  <i>"Turning ideas into useful tech."</i>
+  <i>Turning ideas into useful tech. 🚀</i>
 </p>
