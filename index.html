@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="QfMFjQU7Mj2MSHe-ZNmmb5iM18JINlU7FODrohNOde4" />
+  <meta name="theme-color" content="#090b10" />
+  <title>Shravan Mali | Computer Science Student Portfolio</title>
+  <meta name="description" content="Explore Shravan Mali's portfolio, Python and Android projects, software development skills, and AI applications.">
+  
+  <meta property="og:title" content="Shravan Mali | Portfolio">
+  <meta property="og:description" content="Computer Science student exploring programming, software development, and AI.">
+  <meta property="og:image" content="https://shravan-mali.github.io/Shravan-Mali/shravan-mali.jpg">
+  <meta property="og:url" content="https://shravan-mali.github.io/Shravan-Mali/">
+  <meta property="og:type" content="profile">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090b10;
+      --panel: #10141d;
+      --panel2: #131925;
+      --text: #f2f5fa;
+      --muted: #9ba5b5;
+      --line: rgba(255, 255, 255, .10);
+      --accent: #a7f36b;
+      --cyan: #7ce7e2;
+      --radius: 22px;
+      --max: 1120px
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Manrope, system-ui, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden
+    }
+
+    body:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      background: radial-gradient(ellipse at 15% 5%, rgba(124, 231, 226, .09), transparent 32%), radial-gradient(ellipse at 90% 28%, rgba(167, 243, 107, .07), transparent 30%)
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: auto
+    }
+
+    .mono,
+    .eyebrow,
+    .navlinks a,
+    .tag,
+    .project-number {
+      font-family: "DM Mono", monospace
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(9, 11, 16, .82);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .navinner {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 800;
+      letter-spacing: -.04em
+    }
+
+    .brandmark {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: #10150b;
+      display: grid;
+      place-items: center;
+      font-size: 15px;
+      font-weight: 900
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 26px;
+      align-items: center
+    }
+
+    .navlinks a {
+      font-size: 12px;
+      color: var(--muted);
+      transition: .2s
+    }
+
+    .navlinks a:hover,
+    .navlinks a.active {
+      color: var(--accent)
+    }
+
+    .navcta {
+      border: 1px solid var(--line);
+      padding: 10px 15px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700
+    }
+
+    .navcta:hover {
+      border-color: var(--accent);
+      color: var(--accent)
+    }
+
+    .menu {
+      display: none;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--text);
+      border-radius: 12px;
+      padding: 9px 11px;
+      font-size: 18px
+    }
+
+    .hero {
+      padding: 105px 0 90px;
+      display: grid;
+      grid-template-columns: 1.18fr .82fr;
+      align-items: center;
+      gap: 70px;
+      min-height: 620px
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .eyebrow:before {
+      content: "";
+      width: 24px;
+      height: 1px;
+      background: currentColor
+    }
+
+    h1 {
+      font-size: clamp(46px, 6.5vw, 78px);
+      line-height: 1.04;
+      letter-spacing: -.075em;
+      margin: 24px 0 22px;
+      font-weight: 800
+    }
+
+    h1 .accent {
+      color: var(--accent)
+    }
+
+    .lead {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 580px;
+      line-height: 1.8
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 18px;
+      border-radius: 13px;
+      font-size: 13px;
+      font-weight: 800;
+      border: 1px solid var(--line);
+      transition: transform .2s, border-color .2s
+    }
+
+    .btn:hover {
+      transform: translateY(-2px)
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #10150b;
+      border-color: var(--accent)
+    }
+
+    .btn.secondary:hover {
+      border-color: var(--cyan)
+    }
+
+    .micro {
+      margin-top: 26px;
+      color: #7f8998;
+      font: 11px "DM Mono", monospace;
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 15px var(--accent)
+    }
+
+    .hero-art {
+      position: relative;
+      min-height: 380px;
+      display: grid;
+      place-items: center
+    }
+
+    .orb {
+      width: min(330px, 80vw);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      position: relative;
+      background: radial-gradient(circle at 35% 28%, #263a39, #121923 45%, #0b0e14 72%);
+      border: 1px solid rgba(124, 231, 226, .25);
+      box-shadow: inset 0 0 70px rgba(124, 231, 226, .07), 0 0 90px rgba(124, 231, 226, .05);
+      display: grid;
+      place-items: center;
+      overflow: hidden
+    }
+
+    .orb:before,
+    .orb:after {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(167, 243, 107, .2);
+      border-radius: 50%;
+      transform: rotate(-35deg) scaleX(.55);
+      pointer-events: none;
+      z-index: 1
+    }
+
+    .orb:after {
+      transform: rotate(35deg) scaleX(.55);
+      border-color: rgba(124, 231, 226, .2);
+      pointer-events: none;
+      z-index: 1
+    }
+
+    .monogram {
+      font-size: 90px;
+      letter-spacing: -.12em;
+      font-weight: 800;
+      color: var(--text);
+      text-shadow: 0 0 50px rgba(167, 243, 107, .16);
+      z-index: 1
+    }
+
+    .profile-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      z-index: 0;
+      display: block;
+    }
+
+    .orb .monogram[hidden] {
+      display: none;
+    }
+
+    .orb .monogram:not([hidden]) {
+      position: relative;
+      z-index: 1;
+    }
+
+    .float-card {
+      position: absolute;
+      background: rgba(19, 25, 37, .92);
+      border: 1px solid var(--line);
+      padding: 13px 16px;
+      border-radius: 15px;
+      box-shadow: 0 15px 50px #0005;
+      backdrop-filter: blur(12px)
+    }
+
+    .float-card strong {
+      display: block;
+      font-size: 12px
+    }
+
+    .float-card small {
+      font: 10px "DM Mono", monospace;
+      color: var(--muted)
+    }
+
+    .fc1 {
+      top: 34px;
+      right: 0
+    }
+
+    .fc2 {
+      bottom: 36px;
+      left: 0
+    }
+
+    .fc3 {
+      bottom: 12px;
+      right: 15px;
+      color: var(--accent);
+      font: 11px "DM Mono", monospace
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 20px
+    }
+
+    .stat {
+      padding: 22px 28px;
+      border-right: 1px solid var(--line)
+    }
+
+    .stat:last-child {
+      border: 0
+    }
+
+    .stat strong {
+      font-size: 18px;
+      letter-spacing: -.04em
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 3px
+    }
+
+    section {
+      padding: 94px 0
+    }
+
+    .sectionhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 28px;
+      margin-bottom: 34px
+    }
+
+    .sectionhead h2 {
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -.06em;
+      margin: 12px 0 0
+    }
+
+    .sectionhead p {
+      max-width: 420px;
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0
+    }
+
+    .aboutgrid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 22px
+    }
+
+    .panel {
+      background: linear-gradient(145deg, rgba(19, 25, 37, .92), rgba(13, 17, 25, .9));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px
+    }
+
+    .about-label {
+      font: 11px "DM Mono", monospace;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .1em
+    }
+
+    .about-big {
+      font-size: 26px;
+      line-height: 1.35;
+      letter-spacing: -.05em;
+      margin: 18px 0
+    }
+
+    .muted {
+      color: var(--muted)
+    }
+
+    .about-copy {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.9
+    }
+
+    .principles {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px
+    }
+
+    .principle {
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      font-size: 12px
+    }
+
+    .principle b {
+      display: block;
+      margin-bottom: 5px
+    }
+
+    .principle span {
+      color: var(--muted)
+    }
+
+    .skillsgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px
+    }
+
+    .skillcard {
+      padding: 25px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--panel);
+      min-height: 190px;
+      transition: .25s
+    }
+
+    .skillcard:hover,
+    .project:hover {
+      transform: translateY(-4px);
+      border-color: rgba(167, 243, 107, .35)
+    }
+
+    .skillicon {
+      width: 43px;
+      height: 43px;
+      border-radius: 14px;
+      background: rgba(167, 243, 107, .1);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      margin-bottom: 23px
+    }
+
+    .skillcard h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      letter-spacing: -.04em
+    }
+
+    .skillcard p {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.8
+    }
+
+    .projectgrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px
+    }
+
+    .project {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px;
+      transition: .25s;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column
+    }
+
+    .projecttop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px
+    }
+
+    .project-number {
+      color: var(--accent);
+      font-size: 12px
+    }
+
+    .project-symbol {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-size: 20px
+    }
+
+    .project h3 {
+      font-size: 21px;
+      letter-spacing: -.05em;
+      margin: 0 0 10px
+    }
+
+    .project p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 0 0 20px
+    }
+
+    .tags {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+      margin-top: auto
+    }
+
+    .tag {
+      font-size: 10px;
+      color: #b9c3d0;
+      padding: 6px 9px;
+      border-radius: 7px;
+      background: #ffffff08;
+      border: 1px solid var(--line)
+    }
+
+    .timeline {
+      border-left: 1px solid var(--line);
+      margin-left: 9px;
+      padding-left: 26px;
+      display: grid;
+      gap: 23px
+    }
+
+    .timelineitem {
+      position: relative
+    }
+
+    .timelineitem:before {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      left: -31px;
+      top: 7px;
+      box-shadow: 0 0 14px #a7f36b66
+    }
+
+    .timelineitem h3 {
+      font-size: 15px;
+      margin: 0 0 5px
+    }
+
+    .timelineitem p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0
+    }
+
+    .timelineitem small {
+      font: 10px "DM Mono", monospace;
+      color: var(--accent)
+    }
+
+    .contactbox {
+      border: 1px solid rgba(167, 243, 107, .25);
+      border-radius: 28px;
+      padding: clamp(28px, 5vw, 55px);
+      background: radial-gradient(ellipse at 100% 0%, rgba(167, 243, 107, .08), transparent 42%), var(--panel)
+    }
+
+    .contactbox h2 {
+      font-size: clamp(34px, 5vw, 55px);
+      letter-spacing: -.07em;
+      line-height: 1.1;
+      margin: 16px 0
+    }
+
+    .contactbox p {
+      max-width: 540px;
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    .contactrow {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px
+    }
+
+    .contact-note {
+      font: 10px "DM Mono", monospace;
+      color: #758092;
+      margin-top: 22px
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 25px 0;
+      color: #778190;
+      font: 10px "DM Mono", monospace
+    }
+
+    .footerinner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap
+    }
+
+    .backtop {
+      color: var(--accent)
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .7s, transform .7s
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none
+    }
+
+    @media(max-width:800px) {
+      .navlinks {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background: #0c1017;
+        border-bottom: 1px solid var(--line);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px
+      }
+
+      .navlinks.open {
+        display: flex
+      }
+
+      .menu {
+        display: block
+      }
+
+      .navcta {
+        display: none
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 75px 0 45px;
+        min-height: auto
+      }
+
+      .hero-art {
+        min-height: 310px;
+        grid-row: 1
+      }
+
+      .orb {
+        width: 255px
+      }
+
+      .monogram {
+        font-size: 72px
+      }
+
+      .fc1 {
+        right: 3%;
+        top: 15px
+      }
+
+      .fc2 {
+        left: 1%;
+        bottom: 25px
+      }
+
+      .fc3 {
+        right: 2%;
+        bottom: 5px
+      }
+
+      .stats {
+        margin-top: 15px
+      }
+
+      .stat {
+        padding: 18px 12px
+      }
+
+      .stat strong {
+        font-size: 15px
+      }
+
+      .stat span {
+        font-size: 10px
+      }
+
+      .aboutgrid {
+        grid-template-columns: 1fr
+      }
+
+      .skillsgrid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .sectionhead {
+        align-items: flex-start;
+        flex-direction: column
+      }
+
+      .sectionhead p {
+        max-width: 560px
+      }
+
+      section {
+        padding: 70px 0
+      }
+    }
+
+    @media(max-width:520px) {
+      .wrap {
+        width: min(100% - 28px, var(--max))
+      }
+
+      .hero {
+        padding-top: 45px
+      }
+
+      h1 {
+        font-size: 47px
+      }
+
+      .lead {
+        font-size: 15px
+      }
+
+      .hero-art {
+        min-height: 275px
+      }
+
+      .orb {
+        width: 220px
+      }
+
+      .monogram {
+        font-size: 62px
+      }
+
+      .float-card {
+        padding: 10px 12px
+      }
+
+      .fc1 {
+        top: 5px
+      }
+
+      .fc2 {
+        bottom: 12px
+      }
+
+      .fc3 {
+        font-size: 9px
+      }
+
+      .stats {
+        grid-template-columns: 1fr
+      }
+
+      .stat {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        padding: 14px 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+      }
+
+      .stat:last-child {
+        border-bottom: 0
+      }
+
+      .stat span {
+        margin: 0
+      }
+
+      .skillsgrid,
+      .projectgrid {
+        grid-template-columns: 1fr
+      }
+
+      .skillcard {
+        min-height: 0
+      }
+
+      .panel,
+      .project {
+        padding: 22px
+      }
+
+      .principles {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .sectionhead h2 {
+        font-size: 34px
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none
+      }
+
+      * {
+        transition: none !important
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="wrap navinner">
+      <a class="brand" href="#home" aria-label="Shravan Mali home"><span class="brandmark">SM</span><span>Shravan
+          Mali<span style="color:var(--accent)">.</span></span></a>
+      <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a
+          href="#journey">Journey</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="navcta" href="#contact">Let's connect ↗</a>
+      <button class="menu" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">Developer · Builder · Learner</div>
+        <h1>Turning ideas<br>into <span class="accent">useful tech.</span></h1>
+        <p class="lead">Hey, I'm Shravan — a developer exploring Python, Android development, and AI-powered tools. I
+          enjoy building practical projects that solve real problems and make technology easier to use.</p>
+        <div class="actions"><a class="btn primary" href="#projects">Explore my work <span>↘</span></a><a
+            class="btn secondary" href="#contact">Get in touch <span>↗</span></a></div>
+        <div class="micro"><span class="dot"></span> CURIOUS BY DEFAULT. BUILDING STEP BY STEP.</div>
+      </div>
+      
+      <div class="hero-art" aria-label="Shravan Mali profile photo">
+        <div class="orb">
+          <img
+            class="profile-photo"
+            src="shravan-mali.jpg"
+            alt="Shravan Mali, Computer Science student"
+            onerror="this.hidden = true; this.nextElementSibling.hidden = false;"
+          >
+          <div class="monogram" hidden aria-hidden="true">SM</div>
+        </div>
+        <div class="float-card fc1"><strong>Python & AI</strong><small>EXPERIMENT · BUILD · IMPROVE</small></div>
+        <div class="float-card fc2"><strong>Android Development</strong><small>IDEAS INTO APPS</small></div>
+        <div class="fc3" aria-label="Builder mode">✦ BUILDER MODE</div>
+      </div>
+    </section>
+
+    <div class="wrap stats reveal">
+      <div class="stat"><strong>Build-first mindset</strong><span>Learn by making</span></div>
+      <div class="stat"><strong>3 focus areas</strong><span>Python · Android · AI</span></div>
+      <div class="stat"><strong>Always learning</strong><span>One project at a time</span></div>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="sectionhead reveal">
+          <div>
+            <div class="eyebrow">01 / About me</div>
+            <h2>Curiosity is the<br>start of every build.</h2>
+          </div>
+          <p>I like understanding how things work, then turning that knowledge into projects people can actually use.
+          </p>
+        </div>
+        <div class="aboutgrid">
+          <div class="panel reveal">
+            <div class="about-label">A little about me</div>
+            <div class="about-big">Developer in progress.<br><span style="color:var(--accent)">Problem solver by
+                nature.</span></div>
+            <p class="about-copy">I'm building my skills across software development, mobile apps, and AI tools. I value
+              clean, practical solutions, consistent learning, and projects that teach me something new.</p>
+          </div>
+          <div class="panel reveal">
+            <div class="about-label">What guides my work</div>
+            <div class="principles">
+              <div class="principle"><b>01 — Practicality</b><span>Build for real use, not just looks.</span></div>
+              <div class="principle"><b>02 — Curiosity</b><span>Keep exploring how technology works.</span></div>
+              <div class="principle"><b>03 — Iteration</b><span>Improve through testing and feedback.</span></div>
+              <div class="principle"><b>04 — Clarity</b><span>Make the experience simple to use.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="sectionhead reveal">
+          <div>
+            <div class="eyebrow">02 / Toolkit</div>
+            <h2>Skills I'm building.</h2>
+          </div>
+          <p>A growing toolkit for creating software, mobile experiences, and AI-assisted workflows.</p>
+        </div>
+        <div class="skillsgrid">
+          <article class="skillcard reveal">
+            <div class="skillicon">⌘</div>
+            <h3>Python Development</h3>
+            <p>CLI tools, scripting, API integration, and automation-focused projects.</p>
+          </article>
+          <article class="skillcard reveal">
+            <div class="skillicon">▣</div>
+            <h3>Android Development</h3>
+            <p>Android apps, Kotlin fundamentals, Firebase integration, and app workflows.</p>
+          </article>
+          <article class="skillcard reveal">
+            <div class="skillicon">✳</div>
+            <h3>AI Tools & Automation</h3>
+            <p>Exploring AI-powered products, content workflows, and practical agent ideas.</p>
+          </article>
+          <article class="skillcard reveal">
+            <div class="skillicon">⌘</div>
+            <h3>Web Fundamentals</h3>
+            <p>HTML, CSS, JavaScript, responsive layouts, and interface design.</p>
+          </article>
+          <article class="skillcard reveal">
+            <div class="skillicon">◈</div>
+            <h3>APIs & Firebase</h3>
+            <p>Connecting services, authentication flows, and real-time app features.</p>
+          </article>
+          <article class="skillcard reveal">
+            <div class="skillicon">↗</div>
+            <h3>Product Thinking</h3>
+            <p>Turning an idea into a clear scope, useful features, and a better user flow.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="sectionhead reveal">
+          <div>
+            <div class="eyebrow">03 / Selected work</div>
+            <h2>Projects with a purpose.</h2>
+          </div>
+          <p>A snapshot of projects and ideas. Replace the descriptions and links with your latest live demos and
+            repositories.</p>
+        </div>
+        <div class="projectgrid">
+          <article class="project reveal">
+            <div class="projecttop"><span class="project-number">PROJECT / 01</span><span
+                class="project-symbol">⌁</span></div>
+            <h3>Public IP & ASN Mapper</h3>
+            <p>A Python CLI concept for looking up public IP information, ASN/ISP details, geolocation, reverse DNS, and
+              domain WHOIS data.</p>
+            <div class="tags"><span class="tag">PYTHON</span><span class="tag">APIs</span><span
+                class="tag">NETWORKING</span></div>
+          </article>
+          <article class="project reveal">
+            <div class="projecttop"><span class="project-number">PROJECT / 02</span><span
+                class="project-symbol">▣</span></div>
+            <h3>Realtime Chat App</h3>
+            <p>An Android messaging app concept with authentication, chat screens, Firebase integration, and realtime
+              message notifications.</p>
+            <div class="tags"><span class="tag">ANDROID</span><span class="tag">KOTLIN</span><span
+                class="tag">FIREBASE</span></div>
+          </article>
+          <article class="project reveal">
+            <div class="projecttop"><span class="project-number">PROJECT / 03</span><span
+                class="project-symbol">✳</span></div>
+            <h3>FeedCrafts</h3>
+            <p>An AI-assisted content workflow concept focused on helping creators turn ideas into short-form video
+              content more efficiently.</p>
+            <div class="tags"><span class="tag">AI TOOLS</span><span class="tag">CREATOR TECH</span><span
+                class="tag">AUTOMATION</span></div>
+          </article>
+          <article class="project reveal">
+            <div class="projecttop"><span class="project-number">PROJECT / 04</span><span
+                class="project-symbol">⌘</span></div>
+            <h3>AutoTube AI</h3>
+            <p>An AI video workflow project concept exploring script generation, video creation, YouTube publishing, and
+              performance feedback.</p>
+            <div class="tags"><span class="tag">AI</span><span class="tag">WEB APP</span><span class="tag">YOUTUBE
+                API</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="wrap">
+        <div class="sectionhead reveal">
+          <div>
+            <div class="eyebrow">04 / Journey</div>
+            <h2>Learning by doing.</h2>
+          </div>
+          <p>My path is about building a strong foundation, shipping projects, and improving with every iteration.</p>
+        </div>
+        <div class="panel reveal">
+          <div class="timeline">
+            <div class="timelineitem"><small>NOW</small>
+              <h3>Expanding my developer toolkit</h3>
+              <p>Practising Python, Android development, Firebase, web basics, and AI tools through hands-on projects.
+              </p>
+            </div>
+            <div class="timelineitem"><small>PROJECT-DRIVEN LEARNING</small>
+              <h3>Build, debug, document</h3>
+              <p>Turning ideas into working prototypes, fixing issues, and learning how the pieces fit together.</p>
+            </div>
+            <div class="timelineitem"><small>NEXT</small>
+              <h3>Ship more polished projects</h3>
+              <p>Improve code quality, publish demos and repositories, and learn from real user feedback.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contactbox reveal">
+          <div class="eyebrow">05 / Contact</div>
+          <h2>Have an idea?<br><span style="color:var(--accent)">Let's build it.</span></h2>
+          <p>I'm open to connecting about development, AI tools, collaborative projects, and opportunities to learn and
+            build together.</p>
+          <div class="contactrow">
+            <a class="btn primary" id="emailBtn" href="https://mail.google.com/mail/?view=cm&to=msswork1211%40gmail.com"
+              target="_blank" rel="noopener noreferrer">
+              Email me ↗
+            </a>
+            <a class="btn secondary" href="https://github.com/Shravan-mali" target="_blank" rel="noreferrer">GitHub
+              profile ↗</a><a class="btn secondary" href="https://www.linkedin.com/" target="_blank"
+              rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap footerinner"><span>© <span id="year"></span> SHRAVAN MALI · BUILT WITH CURIOSITY</span><a
+        class="backtop" href="#home">BACK TO TOP ↑</a></div>
+  </footer>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navlinks = document.getElementById('navlinks');
+    menuBtn.addEventListener('click', () => {
+      const isOpen = navlinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+      menuBtn.textContent = isOpen ? '×' : '☰';
+    });
+    navlinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navlinks.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); menuBtn.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) {entry.target.classList.add('visible'); observer.unobserve(entry.target);}
+    }), {threshold: .12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    const sections = [...document.querySelectorAll('main section[id]')];
+    const navItems = [...document.querySelectorAll('.navlinks a')];
+    window.addEventListener('scroll', () => {
+      let current = 'home';
+      sections.forEach(section => {if (window.scrollY >= section.offsetTop - 150) current = section.id;});
+      navItems.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + current));
+    }, {passive: true});
+  </script>
+</body>
+
+</html>
